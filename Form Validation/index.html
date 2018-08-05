@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="jquery.formvalidation.js"></script>
+</head>
+<style>
+    .required-star {
+        margin: 10px;
+        color: #B60202;
+        font-size: 20px;
+        vertical-align: middle;
+    }
+</style>
+<body>
+<div class="container">
+    <form id="regForm">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                   placeholder="Enter email"
+                   data-vld="required|email"
+                   name="email"
+            >
+
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Username</label>
+            <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                   placeholder="Enter email"
+                   data-vld="required|minlen_3|maxlen_16"
+                   name="username"
+            >
+
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input class="form-control" id="exampleInputPassword1" placeholder="Password"
+                   data-vld="required|minlen_10|maxlen_120"
+                   name="password"
+            >
+        </div>
+        <div class="form-group">
+            <textarea class="form-control"
+                      data-vld="maxlen_512"
+            ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<script>
+    $('form').Validate({
+        errorPosition : 'append'
+    });
+</script>
+</body>
+</html>

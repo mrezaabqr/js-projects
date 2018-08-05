@@ -1,0 +1,14 @@
+.slCloseBtn {
+    position: absolute;
+    display: inline-block;
+    top: 5px;
+    right: 5px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background: url("img/download.png");
+    opacity: 0.3;
+}
+.slCloseBtn:hover {
+    opacity: 1;
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='bootstrap.rtl.css' rel='stylesheet' type='text/css'>
+    <script src="js/jquery.min.1.11.2.js"></script>
+    <title>DOM Tutorial</title>
+</head>
+<style>
+    #result {
+        height: 500px;
+        width: 500px;
+        background-color: snow;
+    }
+</style>
+<body>
+<img src="">
+<button id="ajx">Send</button>
+<div id="result"></div>
+<script>
+    $('#ajx').click(function () {
+        $.ajax({
+            type: 'GET',
+            url: 'http://localhost:63342/js/req.html?_ijt=mq8tljgk9mfrinqgk718a9lm0g',
+            success: function (response) {
+                var result = JSON.parse(response);
+                if (result != 0) {
+                    $('#result').html('ok')
+                } else {
+                    $('#result').html('no')
+                }
+
+            }
+        })
+    })
+</script>
+</body>
+</html>

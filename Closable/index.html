@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <link href="slclosable.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="jquery.main.js"></script>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .main {
+        width: 80%;
+        height: 100px;
+        background-color: grey;
+        margin: 20px;
+    }
+</style>
+<body>
+<a href="kion"> item 1</a>
+<a href="kadfion"> item 2</a>
+<a href="kioadfn"> item 3</a>
+<a href="kioadfn"> item 4</a>
+<a href="kionadfadf"> item 5</a>
+
+
+<div class="main">
+    div
+</div>
+<div class="main">
+    div
+</div>
+<div class="main">
+    div
+</div>
+
+
+<script>
+
+    //    $(document).ready(function () {
+    //        $('.main').helloWorld().greenify().slideUp(500);
+    //    });
+    //
+    //
+    //
+    //    (function ($) {
+    //        $.fn.helloWorld = function (action) {
+    //            if (action == 'd isable'){
+    //
+    //            }
+    //            else {
+    //
+    //            }
+    //            return this;
+    //        };
+    //    }(jQuery));
+    //
+    (function ($) {
+        $.fn.greenify = function (action) {
+            var setting = $.extend({
+                color: 'green',
+                bgColor: 'blue'
+            }, action);
+            this.css('color', setting.color);
+            this.css('background-color', setting.bgColor);
+            return this;
+        };
+    }(jQuery));
+
+    ( function ($) {
+        $.fn.prependIndex = function () {
+
+            this.each(function (index, value) {
+                $(this).html(index + $(this).html())
+            })
+        }
+    }(jQuery));
+    (function ($) {
+        $.fn.addHref = function () {
+            this.each(function (index, value) {
+                console.log($(this).href);
+                $(this).html($(this).html() + $(this).href)
+            })
+        }
+
+    }(jQuery));
+    $('a').addHref();
+    $('div').addCloseBtn();
+</script>
+</body>
+</html>
