@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="jquery.modal.js"></script>
+</head>
+<script>
+    $().slModal();
+</script>
+<style>
+    .wrapper {
+        background-color: #000000;
+        z-index: 998;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        opacity: 0.7;
+        display: none;
+    }
+
+    .modal-custom {
+        position: fixed;
+        z-index: 999;
+        min-width: 30% !important;
+        max-width:;: 90 % !important;
+        top: 200px;
+        left: 200px;
+        display: none;
+    }
+</style>
+<body>
+<div class="container">
+    <br><br>
+    <button class="btn btn-danger" data-modal="searchBox">Search</button>
+    <button class="btn btn-danger" data-modal="searchBox2">Search2</button>
+    <button class="btn btn-danger" data-modal="searchBox3">Search2</button>
+    <br><br>
+</div>
+
+<div class="container bg-white modal-custom px-4 py-4 border-success rounded" id="searchBox" data-entrance="fade">
+    <form>
+        <div class="form-group row">
+            <label for="Email" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="Email" value="email@example.com">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+        </div>
+    </form>
+</div>
+<div class="container bg-danger modal-custom px-4 py-4 border-success rounded" id="searchBox2" data-entrance="top">
+    <form>
+        <div class="form-group row">
+            <label for="Email" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="Email" value="email@example.com">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+        </div>
+    </form>
+</div>
+<div class="container bg-danger modal-custom px-4 py-4 border-success rounded" id="searchBox3" data-entrance="bottom">
+    <form>
+        <div class="form-group row">
+            <label for="Email" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="Email" value="email@example.com">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+        </div>
+    </form>
+</div>
+<script>
+</script>
+</body>
+</html>
