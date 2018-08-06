@@ -1,0 +1,64 @@
+body {
+    background-color: #F1F3FA;
+}
+
+.bg-left {
+    min-height: 400px;
+    background-color: white;
+}
+
+.bg-right {
+    min-height: 400px;
+    background-color: white;
+}
+
+.card-custom {
+    border: none;
+}
+
+.card-header-custom {
+    background-color: white !important;
+    border: none;
+}
+
+.profile-text {
+    font-size: 14px;
+}
+
+.nav-column-custom li a i {
+    transition: 0.2s;
+    vertical-align: middle;
+}
+
+.nav-column-custom li {
+    transition: 0.2s ease;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.nav-column-custom li:hover {
+    border-left: 2px solid #0056B3;
+    background-color: #b3d7ff;
+}
+
+.nav-column-custom > li:hover > a > i {
+    font-size: 20px;
+}
+
+.navbar-collapse-custom ul li a {
+    font-size: 13px;
+    margin-left: 8px;
+}
+
+.navbar-collapse-custom ul li a i {
+
+}
+
+.navbar-collapse-custom ul li {
+    border: none !important;
+    background-color: inherit;
+}
+
+.navbar-collapse-custom ul li a i {
+    font-size: 13px;
+    margin-top: -3px;
+}
