@@ -1,0 +1,48 @@
+p {
+    font-size: 20px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.btn-custom {
+    background-color: transparent;
+    padding: 10px 20px;
+    color: white !important;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .btn-custom {
+        background-color: transparent;
+        padding: 10px 5px;
+        color: white !important;
+        display: block;
+
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .navbar-toggler {
+        background-color: transparent;
+        color: white !important;
+        display: block;
+        border: none;
+    }
+}
+
+.btn-label {
+    font-size: 10px;
+    margin-top: 10px;
+}
