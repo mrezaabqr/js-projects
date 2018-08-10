@@ -1,0 +1,24 @@
+
+.navbar {
+    padding: 0 !important;
+}
+
+body {
+    background-color: #B8D1E5;
+}
+
+.megamenu {
+    position: fixed;
+    z-index: 999;
+}
+
+.megamenu {
+    display: none;
+}
+
+.mega:hover .megamenu {
+    display: block;
+    background-color: #eeeeee;
+    transform: (50%, 50%);
+
+}

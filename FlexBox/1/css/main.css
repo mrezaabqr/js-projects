@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif
+}
+.siteHeader {
+    padding: 10px;
+    background-color: #56727c;
+    display: flex;
+    justify-content: space-between;
+}
+.siteHeader-section{
+    display: flex;
+    align-items: center
+}
+.siteHeader-item {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+.siteHeaderLogo {
+    font-size: 20px;
+    line-height: 0;
+    color: white;
+}
+.siteHeader-item + .siteHeader-item {
+    margin-left: 10px;
+}
+.siteHeaderButton {
+    cursor: pointer;
+    color: #d9e9ef;
+
+}
