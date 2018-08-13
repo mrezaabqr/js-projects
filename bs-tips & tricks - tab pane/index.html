@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-light bg-white">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img
+                src="https://static.zoodfood.com/bundles/bodofoodfrontend/images/zoodfood-logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <button class="navbar-toggler d-md-none d-lg-none" type="button" id="sidebar">
+            <span class="navbar-toggler-icon"></span>
+            sideBar Toggler
+        </button>
+        <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="card d-sm-block d-md-none">
+    <ul class="nav flex-column nav-pills nav-in-768" id="v-pills-tab">
+        <li class="nav-item nav-item-custom ">
+            <a class="nav-link active nav-link-custom" id="v-pills-home-tab" data-toggle="pill"
+               href="#v-pills-home"> <i class="fa fa-file Icon" style="color: #B8B7B7"></i>
+                Test 1</a>
+        </li>
+        <li class="nav-item nav-item-custom">
+            <a class="nav-link nav-link-custom" id="v-pills-profile-tab" data-toggle="pill"
+               href="#v-pills-profile"><i class="fa fa-user Icon" style="color: #B8B7B7"></i> Test 2</a>
+        </li>
+        <li class="nav-item nav-item-custom">
+            <a class="nav-link nav-link-custom" id="v-pills-messages-tab" data-toggle="pill"
+               href="#v-pills-messages">Test 3</a>
+        </li>
+        <li class="nav-item nav-item-custom">
+            <a class="nav-link nav-link-custom" id="v-pills-settings-tab" data-toggle="pill"
+               href="#v-pills-settings">Test 4</a>
+        </li>
+    </ul>
+</div>
+<div class="container container-custom" id="area">
+    <div class="row">
+        <div class="col-12 col-md-3 mb-3 d-sm-none d-md-block  ">
+            <div class="card">
+                <ul class="nav flex-column nav-pills " id="v-pills-tab">
+                    <li class="nav-item nav-item-custom ">
+                        <a class="nav-link active nav-link-custom" id="v-pills-home-tab" data-toggle="pill"
+                           href="#v-pills-home"> <i class="fa fa-file Icon" style="color: #B8B7B7"></i>
+                            Test 1</a>
+                    </li>
+                    <li class="nav-item nav-item-custom">
+                        <a class="nav-link nav-link-custom" id="v-pills-profile-tab" data-toggle="pill"
+                           href="#v-pills-profile"><i class="fa fa-user Icon" style="color: #B8B7B7"></i> Test 2</a>
+                    </li>
+                    <li class="nav-item nav-item-custom">
+                        <a class="nav-link nav-link-custom" id="v-pills-messages-tab" data-toggle="pill"
+                           href="#v-pills-messages">Test 3</a>
+                    </li>
+                    <li class="nav-item nav-item-custom">
+                        <a class="nav-link nav-link-custom" id="v-pills-settings-tab" data-toggle="pill"
+                           href="#v-pills-settings">Test 4</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-12 col-md-9 mb-3">
+
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                     aria-labelledby="v-pills-home-tab">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="img-profile rounded-circle">
+                                <img src="https://snappfood.ir/bundles/bodofoodfrontend/images/profile/3.png?v1127"
+                                     class="img-fluid">
+
+                            </div>
+
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title card-title-custom d-flex justify-content-center ">
+                                <p>My Orders</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                     aria-labelledby="v-pills-profile-tab">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="img-profile rounded-circle">
+                                <img src="https://snappfood.ir/bundles/bodofoodfrontend/images/profile/1.png?v1127"
+                                     class="img-fluid">
+
+                            </div>
+
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title card-title-custom d-flex justify-content-center ">
+                                <p>Personal Info</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                     aria-labelledby="v-pills-messages-tab">3
+                </div>
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                     aria-labelledby="v-pills-settings-tab">4
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
