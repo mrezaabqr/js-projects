@@ -25,7 +25,7 @@ var a = document.createElement('a');
 a.id = 'roo';
 
 
-a.setAttribute('href', 'http://roocket.ir');
+a.setAttribute('href', 'http://');
 a.textContent = 'please click me to show fucking roocket site ';
 col.insertBefore(a, col.childNodes[1]);
 var roocket = document.getElementById('roo');
